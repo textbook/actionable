@@ -9,7 +9,7 @@ export default class Actionable {
 
 	public update(status: StatusBarItem) {
 		this.logger.info("Updating status");
-		status.text = `$(github) ${this.logger.name}`;
+		status.text = `$(github-action) ${this.logger.name}`;
 		status.backgroundColor = new ThemeColor("statusBarItem.errorBackground");
 		status.show();
 	}

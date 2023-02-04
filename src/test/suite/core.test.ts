@@ -18,7 +18,7 @@ describe("Actionable", () => {
 
 		ext.update(statusStub);
 
-		expect(statusStub.text).to.equal("$(github) Actionable");
+		expect(statusStub.text).to.equal("$(github-action) Actionable");
 		expect(statusStub.backgroundColor).to.be.instanceOf(ThemeColor);
 		expect(statusStub.show).to.have.been.calledWith();
 		expect(channelStub.info).to.have.been.calledWith("Updating status");
