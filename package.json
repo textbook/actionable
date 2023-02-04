@@ -10,17 +10,10 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:actionable.helloWorld"
+    "workspaceContains:.github/workflows/*.yml"
   ],
   "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "actionable.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
+  "contributes": {},
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
